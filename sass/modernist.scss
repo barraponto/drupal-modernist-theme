@@ -24,8 +24,8 @@ $zen-navigation-height: 2.3em;
 @include zen-navigation();
 
 // These variables control the typefaces as defined in html-reset.css
-$zen-proportional-typeface: 'Verdana, Tahoma, "DejaVu Sans", sans-serif';
-$zen-monospaced-typeface: '"Courier New", "DejaVu Sans Mono", monospace';
+$zen-proportional-typeface: 'Georgia, "Times New Roman", "DejaVu Serif", serif';
+$zen-monospaced-typeface: 'Monaco, "Courier New", "DejaVu Sans Mono", monospace';
 
 //Use this mixin to set the new typefaces
 @include zen-typefaces($zen-proportional-typeface, $zen-monospaced-typeface);
