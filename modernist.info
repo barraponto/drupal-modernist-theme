@@ -27,7 +27,6 @@ base theme = zen
   ; http://drupal.org/node/171209 for more details.
 stylesheets[all][]   = css/html-reset.css
 stylesheets[all][]   = css/wireframes.css
-stylesheets[all][]   = css/layout-fixed.css
 stylesheets[all][]   = css/page-backgrounds.css
 stylesheets[all][]   = css/tabs.css
 stylesheets[all][]   = css/messages.css
@@ -41,6 +40,7 @@ stylesheets[all][]   = css/nodes.css
 stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
 stylesheets[all][]   = css/fields.css
+stylesheets[all][]   = css/modernist.css
 stylesheets[print][] = css/print.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
