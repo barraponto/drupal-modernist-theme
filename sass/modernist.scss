@@ -30,7 +30,7 @@ $zen-monospaced-typeface: 'Monaco, "Courier New", "DejaVu Sans Mono", monospace'
 //Use this mixin to set the new typefaces
 @include zen-typefaces($zen-proportional-typeface, $zen-monospaced-typeface);
 
-body { }
+body { @extend .-modernist-body; }
 
 #skip-link { }
 
