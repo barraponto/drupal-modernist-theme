@@ -2,8 +2,8 @@
 
 
   ; The name and description of the theme used on the admin/build/themes page.
-name        = modernist
-description = A Zen sub-theme
+name        = Modernist
+description = A port from Wordpress theme by Rodrigo Galindez
 
   ; The screenshot used on the admin/build/themes page.
 screenshot = screenshot.png
