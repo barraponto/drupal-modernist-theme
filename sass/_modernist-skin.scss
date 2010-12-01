@@ -1,0 +1,137 @@
+/* Page Elements */
+
+.-modernist-skip-link { }
+.-modernist-logo { }
+
+.-modernist-name-and-slogan {
+  #site-name { 
+    a { } }
+  #site-slogan { } }
+
+.-modernist-search-box {
+  #search {
+    .form-item { 
+      .form-text { } }
+    .form-submit { } } }
+
+.-modernist-mission { }
+.-modernist-breadcrumb { }
+
+.-modernist-messages {
+  ul {
+    li { } }
+  &.error { }
+  &.warning { }
+  &.status { }
+  &.help { } }
+
+.-modernist-primary-tabs { }
+.-modernist-secondary-tabs { }
+.-modernist-menu {
+  > li { //use > to target only child items,
+    &.first { }
+    &.last { }
+    &.expanded {
+      > ul { @extend .-modernist-submenu; } } } }
+
+.-modernist-submenu {
+    > li { //use > to target only child items,
+    &.first { }
+    &.last { }
+    &.expanded {
+      > ul { } } } }
+
+.-modernist-feed-icons {
+  .feed-icon { } }
+
+.-modernist-footer-message { }
+
+/* Common Elements */
+
+.-modernist-h2 { }
+.-modernist-h3 { }
+.-modernist-p { }
+.-modernist-li { }
+
+.-modernist-ul {
+  li { @extend .-modernist-li; } }
+
+.-modernist-ol {
+  li { @extend .-modernist-li; } }
+
+.-modernist-a {
+  &:link { }
+  &:visited { }
+  &:hover { }
+  &:focus { }
+  &:active { } }
+
+/* Content Elements */
+
+.-modernist-h1 { }
+.-modernist-h4 { }
+.-modernist-pre { }
+.-modernist-code { }
+.-modernist-blockquote { }
+.-modernist-cite { }
+.-modernist-table {
+  caption { }
+  tr {
+    th { }
+    td { }
+    thead & { }
+    tfoot & { }
+    tbody & { } } }
+
+/* Base Object */
+
+.-modernist-base-object {
+  .title { }
+  .content { } }
+
+/* Helper Objects */
+
+.-modernist-content-object {
+  @extend .-base-object;
+  h1 { @extend .-modernist-h1; }
+  h4 { @extend .-modernist-h4; }
+  code { @extend .-modernist-code; }
+  blockquote { @extend .-modernist-blockquote; }
+  table { @extend .-modernist-table; }
+  h2 { @extend .-modernist-h2; }
+  h3 { @extend .-modernist-h3; }
+  p { @extend .-modernist-p; }
+  li { @extend .-modernist-li; }
+  ul { @extend .-modernist-ul; }
+  ol { @extend .-modernist-ol; }
+  a { @extend .-modernist-a; } }
+
+.-modernist-block-object {
+  @extend .-base-object;
+  h2 { @extend .-modernist-h2; }
+  h3 { @extend .-modernist-h3; }
+  p { @extend .-modernist-p; }
+  li { @extend .-modernist-li; }
+  ul { @extend .-modernist-ul; }
+  ol { @extend .-modernist-ol; }
+  a { @extend .-modernist-a; } }
+
+/* Node Object */
+
+.-modernist-node-object {
+  .picture { }
+  .title { }
+  .meta { }
+  .content { @extend .-content-object; }
+  .links {
+    li {
+      &.first { }
+      &.last { } } } }
+
+/* Profile Object */
+.-modernist-profile-object {
+  .picture { }
+  h3 { } /* profile category header */ 
+  dl { /* profile category wrapper */ 
+    dt { } /*profile category label */
+    dd { } /* profile category value */ } }

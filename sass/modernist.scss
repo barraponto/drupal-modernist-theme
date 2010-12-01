@@ -1,0 +1,77 @@
+@import "drupal/zen";
+@import "modernist-skin";
+
+// This variable controls the total width of the Zen theme.
+// You can use px for a Fixed layout or % for a Liquid layout
+$zen-width: 960px;
+
+// These variables control the size of the sidebars
+$zen-first-sidebar-width: 200px;
+$zen-second-sidebar-width: 200px;
+
+// This variable positions the content relative to the sidebars
+// Possible values are first, last, middle
+$zen-content-position: "middle";
+
+// Use this mixin to generate the Zen layout
+@include zen-layout();
+
+// These variables control the #navigation div
+$zen-navigation-width: 100%;
+$zen-navigation-height: 2.3em;
+
+// Use this mixin to properly position the #navigation div
+@include zen-navigation();
+
+body { }
+
+#skip-link { }
+
+#page-wrapper {
+
+/* Content */
+
+  #content {
+    #mission { }
+    #breadcrumb { }
+    .messages { }
+    .tabs {
+      .primary { }
+      .secondary { } }
+    .feed-icons { } }
+
+/* Regions */
+
+  .region-sidebar-first & {
+    .block { } }
+
+  .region-sidebar-first & {
+    .block { } }
+
+  .region-navigation & {
+    #main-menu { }
+    .block { } }
+
+  .region-highlight & {
+    .block { } }
+
+  .region-content-top & {
+    .block { } }
+
+  .region-content-bottom & {
+    .block { } }
+
+  .region-header & {
+    #logo { }
+    #name-and-slogan { }
+    .block { } }
+
+  .region-footer & {
+    #secondary-menu { }
+    #footer-message { }
+    .block { } }
+
+  .region-page-closure & {
+    .block { } }
+
+}
